@@ -10,8 +10,8 @@ void search(int cur){
 	else{
 		for(int i = 0 ; i < n; ++i){
 			bool flag = true;
-			C[cur] = i;
-			for(int j = 0; j < cur; ++j){ // Try to put the queen on the i column;
+			C[cur] = i;// Try to put the queen on the i column;
+			for(int j = 0; j < cur; ++j){ 
 				if(C[cur] == C[j] || C[cur]-cur == C[j]-j || C[cur] + cur == C[j] + j){
 					flag = false; break;
 				}
